@@ -1,0 +1,31 @@
+nav{
+    height: 5rem;
+    width: 100vw;
+    background: var(--color-primary);
+    display: grid;
+    place-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* only show on medium and small screens */
+
+.nav__toggle-btn{
+    display: none;
+}
+
+
+.nav__container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo{
+    width: 10rem;
+}
+

@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom'
 import {links} from '../data'
 import {FaBars} from 'react-icons/fa'
 import './Navbar.css'
-import Logo from '../images/logo-stag.png'
+import Logo from '../images/logo-round.png'
 
 const Navbar = () => {
   return (
