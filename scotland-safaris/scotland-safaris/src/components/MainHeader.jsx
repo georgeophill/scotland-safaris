@@ -7,10 +7,10 @@ const MainHeader = () => {
     <header className='main__header'>
       <div className="container main__Header-container">
         <div className="main__header-left">
-          <h4>#BackToOurRoots</h4>
+          <h3>#BackToOurRoots</h3>
           <h1>Bringing Wilderness Back </h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-            Iusto esse recusandae quisquam? Distinctio officiis assumenda laudantium quo iusto, blanditiis praesentium!</p>
+          <p>Scotland Safaris is a way that allows us to develop the understanding and love for the wild, unlocking the benefits 
+            we can gain both physically and mentally from being outdoors & immersing yourself in nature.</p>
           <Link to="/safaris" className="btn lg">Get Started</Link>
         </div>
         <div className="main__header-right">

@@ -34,7 +34,7 @@ body{
     color: var(--color-gray-200);
     line-height: 1.7;
     overflow-x: hidden;
-    background: var(--color-gray-600);
+    background: var(--color-gray-300);
 
 }
 
@@ -51,6 +51,8 @@ h1, h2, h3, h4, h5 {
 
 h1{
     font-size: 3rem;
+    font-family: 'Caveat', cursive;
+    
 }
 
 h2 {
@@ -95,4 +97,35 @@ img{
 
 .btn.sm:hover {
     background: var(--color-gray-100);
+}
+
+#ss{
+    font-family: 'Caveat', cursive;
+}
+
+section{
+    margin-top: 10rem;
+}
+
+.section__head {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.section__head span{
+    background: var(--color-gray-400);
+    padding: 0.8rem;
+    border-radius: 1rem;
+    /* color: var(--color-secondary); */
+    font-size: 1rem
+}
+
+.card {
+    background: var(--color-gray-500);
+    border: 2px solid transparent;
+    text-align: center;
+    padding: 3rem 2rem;
+    border-radius: 0 3rem 0 3rem;
+
 }

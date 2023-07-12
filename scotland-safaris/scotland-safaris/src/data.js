@@ -35,7 +35,7 @@ export const links = [
 
 
 
-export const programs = [
+export const safaris = [
     {
         id: 1,
         icon: <SiOpenaigym/>,
