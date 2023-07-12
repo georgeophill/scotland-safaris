@@ -1,4 +1,5 @@
-import {SiOpenaigym} from 'react-icons/si'
+import {GiPineTree} from 'react-icons/gi'
+import { SiOpenaigym } from 'react-icons/si'
 
 
 
@@ -38,31 +39,31 @@ export const links = [
 export const safaris = [
     {
         id: 1,
-        icon: <SiOpenaigym/>,
-        title: "Program One",
+        icon: <GiPineTree/>,
+        title: "Summer",
         info: "This is the day that the lord has made. We will rejoice!",
-        path: "/programs/111"
+        path: "/safaris/111"
     },
     {
         id: 2,
-        icon: <SiOpenaigym/>,
-        title: "Program Two",
+        icon: <GiPineTree/>,
+        title: "Winter",
         info: "This is the day that the lord has made. We will rejoice!",
-        path: "/programs/222"
+        path: "/safaris/222"
     },
     {
         id: 3,
-        icon: <SiOpenaigym/>,
-        title: "Program Three",
+        icon: <GiPineTree/>,
+        title: "Exclusive",
         info: "This is the day that the lord has made. We will rejoice!",
-        path: "/programs/333"
+        path: "/safaris/333"
     },
     {
         id: 4,
-        icon: <SiOpenaigym/>,
-        title: "Program Four",
+        icon: <GiPineTree/>,
+        title: "Bespoke",
         info: "This is the day that the lord has made. We will rejoice!",
-        path: "/programs/444"
+        path: "/safaris/444"
     }
 ]
 
