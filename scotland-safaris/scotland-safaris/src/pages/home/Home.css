@@ -1,9 +1,12 @@
 .main__header {
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 5rem);
     display: grid;
     place-items: center;
     margin-top: 3rem;
+    background-image: url('../../images/KYLESKU\ .JPG');
+    background-size: cover;
+    background-position: center;
 }
 
 .main__header-container {
@@ -37,7 +40,7 @@
     position: relative;
 }
 
-.main__header-circle {
+/* .main__header-circle {
     width: 37rem;
     height: 37rem;
     background: rgb(255, 255, 255);
@@ -45,8 +48,23 @@
     position: absolute;
     filter: blur(50px);
     opacity: 75%;
-}
+} */
 
 .main__header-image{
     position: relative;
 }
+  
+/* .main__header-right:hover .main__header-circle {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease;
+} */
+
+/* .main__header-circle:hover {
+    display: none;
+  }
+  
+  .main__header:hover .main__header-circle {
+    opacity: 0;
+    transition: opacity 5s ease;
+  } */
