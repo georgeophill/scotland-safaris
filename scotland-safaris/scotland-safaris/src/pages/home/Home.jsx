@@ -3,6 +3,7 @@ import './Home.css'
 import MainHeader from '../../components/MainHeader'
 import Safaris from '../../components/Safaris'
 import Values from '../../components/Values'
+import FAQs from '../../components/FAQs'
 
 
 
@@ -12,6 +13,7 @@ const Home = () => {
     <MainHeader />
     <Safaris/>
     <Values/>
+    <FAQs/> 
     
     </>
   )
