@@ -40,28 +40,28 @@ export const safaris = [
     {
         id: 1,
         icon: <GiPineTree/>,
-        title: "Summer",
+        title: "Adventure Safaris",
         info: "The caribbean seas, an abundance of wildlife and breathtaking views. ",
         path: "/safaris/111"
     },
     {
         id: 2,
         icon: <GiPineTree/>,
-        title: "Winter",
+        title: "Winter Safaris",
         info: "Being out in the elements, feeling the power of mother nature you will be sure to experience over the winter. It truly makes you feel alive!",
         path: "/safaris/222"
     },
     {
         id: 3,
         icon: <GiPineTree/>,
-        title: "Exclusive",
+        title: "Wildlife Safaris",
         info: "Experince places very few have been to before, and even better, with no one else around you!",
         path: "/safaris/333"
     },
     {
         id: 4,
         icon: <GiPineTree/>,
-        title: "Bespoke",
+        title: "Bespoke Safaris",
         info: "Dive deeper into what Scotland has to offer. We can dynamically draw up a bespoke package tailored to your preferences!",
         path: "/safaris/444"
     }
