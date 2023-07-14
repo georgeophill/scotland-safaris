@@ -2,19 +2,23 @@ import SectionHead from "./SectionHead"
 import { ImQuotesLeft } from 'react-icons/im'
 import Card from "../UI/Card"
 import { IoIosArrowDropleftCircle, IoIosArrowDroprightCircle } from 'react-icons/io'
-import { testimonials } from '../data'
+import  { testimonials }  from '../data'
 import { useState } from "react"
 
 const Testimonials = () => {
-    const [ index, setIndex ] = useState(0)
-    const {name, quote, job, avatar} =  testimonials[index]
+    const [index, setIndex] = useState(0);
+    const { name, job, quote, avatar } = testimonials[index];
 
     const prevTestimonialHandler = () => {
-        // setIndex(( prev  =>  prev + 1 ))
+        setIndex(( prev  =>  prev + 1 ))
+
+        if(index <= 0 ) {
+            setIndex(testimonials.length -1 )
+        }
     }
 
     const nextTestimonialHandler = () => {
-        setIndex(( prev  =>  prev - 1 ))
+       setIndex(prev => +1 );
 
         if(index >= testimonials.length - 1) {
             setIndex(0);

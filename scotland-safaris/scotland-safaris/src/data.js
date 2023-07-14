@@ -41,28 +41,28 @@ export const safaris = [
         id: 1,
         icon: <GiPineTree/>,
         title: "Summer",
-        info: "This is the day that the lord has made. We will rejoice!",
+        info: "The caribbean seas, an abundance of wildlife and breathtaking views. ",
         path: "/safaris/111"
     },
     {
         id: 2,
         icon: <GiPineTree/>,
         title: "Winter",
-        info: "This is the day that the lord has made. We will rejoice!",
+        info: "Being out in the elements, feeling the power of mother nature you will be sure to experience over the winter. It truly makes you feel alive!",
         path: "/safaris/222"
     },
     {
         id: 3,
         icon: <GiPineTree/>,
         title: "Exclusive",
-        info: "This is the day that the lord has made. We will rejoice!",
+        info: "Experince places very few have been to before, and even better, with no one else around you!",
         path: "/safaris/333"
     },
     {
         id: 4,
         icon: <GiPineTree/>,
         title: "Bespoke",
-        info: "This is the day that the lord has made. We will rejoice!",
+        info: "Dive deeper into what Scotland has to offer. We can dynamically draw up a bespoke package tailored to your preferences!",
         path: "/safaris/444"
     }
 ]

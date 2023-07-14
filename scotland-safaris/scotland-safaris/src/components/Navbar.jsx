@@ -4,7 +4,7 @@ import {links} from '../data'
 import {FaBars} from 'react-icons/fa'
 import { GrClose } from 'react-icons/gr'
 import './Navbar.css'
-import Logo from '../images/logo-round.png'
+import Logo from '../images/new-logo.JPG'
 
 const Navbar = () => {
   const [isNavShowing, setIsNavShowing] = useState(false)
