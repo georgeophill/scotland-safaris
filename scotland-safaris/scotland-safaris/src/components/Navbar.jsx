@@ -4,7 +4,7 @@ import {links} from '../data'
 import {FaBars} from 'react-icons/fa'
 import { GrClose } from 'react-icons/gr'
 import './Navbar.css'
-import Logo from '../images/new-logo.JPG'
+import Logo from '../images/logo1.png'
 
 const Navbar = () => {
   const [isNavShowing, setIsNavShowing] = useState(false)
@@ -12,7 +12,7 @@ const Navbar = () => {
     <nav>
         <div className="container nav__container">
             <Link to="/" className="logo" onClick={() => setIsNavShowing(false)} >
-                <img src={Logo} alt="Logo" />
+                <img src={Logo} alt="Logo" id="logo1"/>
             </Link>
             <ul className={`nav__links ${isNavShowing ? 'show__nav' : 'hide__nav'}`}> 
               {
