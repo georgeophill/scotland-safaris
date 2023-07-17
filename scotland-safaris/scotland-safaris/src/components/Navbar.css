@@ -1,14 +1,13 @@
 nav{
     height: 10rem;
     width: 100vw;
-    background: var(--color-primary);
+    background: hsl(var(--primary-hue), 100%, 30%, 0.5);
     display: grid;
     place-items: center;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
-    opacity: 50%;
     border-radius: 0 0 10rem 10rem;
 }
 
@@ -25,10 +24,11 @@ nav{
     justify-content: space-between;
     align-items: center;
     position: relative;
+    opacity: 100%;
 }
 
 .logo{
-    width: 418px;
+    width: 500px;
 }
 
 #logo1{
@@ -65,6 +65,7 @@ nav{
     left: calc(50% - 0.75rem);
     transform: rotate(45deg);
     margin-top: 3.4rem;
+    background: hsl(var(--primary-hue), 100%, 30%);
 
 }
 
