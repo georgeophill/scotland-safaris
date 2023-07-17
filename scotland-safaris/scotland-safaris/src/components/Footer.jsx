@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="container footer__container">
         <article>
           <Link to="/" className='logo' >
-            <img src={Logo} alt="Footer logo" />
+            <img id="footerlogo" src={Logo} alt="Footer logo" />
           </Link>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Numquam, doloremque voluptas vitae cupiditate fuga quasi quaerat quis 

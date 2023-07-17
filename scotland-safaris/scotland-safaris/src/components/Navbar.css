@@ -28,11 +28,8 @@ nav{
 }
 
 .logo{
-    width: 500px;
-}
-
-#logo1{
-    opacity: 100%;
+    width: 500px ;
+    display:block;
 }
 
 .nav__links{
