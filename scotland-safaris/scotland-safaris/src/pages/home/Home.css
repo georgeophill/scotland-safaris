@@ -274,6 +274,7 @@ footer {
 
 #footerlogo {
     width: 20rem;
+    margin-top: -56px;
 }
 
 .footer__socials {
@@ -285,17 +286,32 @@ footer {
  
 .footer__socials a {
     color: var(--color-gray-100);
-    padding: 0.7rem;
-    border: 1px solid transparent;
+    padding: 0.5rem;
+    border: 1px solid black;
     border-radius: 0.6rem;
     transition: var(--transition);
 }
 
 .footer__socials a svg {
     color: var(--color-gray-600);
+    font-size: 27px;
 }
 
 .footer__socials a:hover {
     border-color: var(--color-gray-100);
     background: white;
+}
+
+.footer__copyright {
+    color: var(--color-gray-100);
+    text-align: center;
+    padding: 1.5rem 0;
+    border-top: 2px solid var(--color-primary-variant);
+    margin-top: 5rem ;
+
+
+}
+
+article a:hover {
+    text-decoration: underline;
 }
