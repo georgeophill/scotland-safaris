@@ -28,7 +28,7 @@ const Footer = () => {
           </div>
         </article>
         <article>
-          <h4>Permalinks</h4>
+          <h4 className='Footer-links'>Permalinks</h4>
           <Link to="/about">About</Link>
           <Link to="/safaris">Safaris</Link>
           <Link to="/guides">Guides</Link>
@@ -36,7 +36,7 @@ const Footer = () => {
           <Link to="/contact">Contact</Link>
         </article>
         <article>
-          <h4>Insights</h4>
+          <h4 className='Footer-links'>Insights</h4>
           <Link to="/s">Blog</Link>
           <Link to="/s">Case Studies</Link>
           <Link to="/s">Events</Link>
@@ -44,7 +44,7 @@ const Footer = () => {
           <Link to="/s">FAQs</Link>
         </article>
         <article>
-          <h4>Get In Touch</h4>
+          <h4 className='Footer-links'>Get In Touch</h4>
           <Link to="/contact">Contact Us</Link>
           <Link to="/s">Support</Link>
         </article>

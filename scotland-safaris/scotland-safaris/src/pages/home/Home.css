@@ -1,6 +1,6 @@
 .main__header {
     width: 100vw;
-    height: calc(100vh - 5rem);
+    height: calc(100vh - 0rem);
     display: grid;
     place-items: center;
     /* margin-top: 7rem; */
@@ -56,7 +56,7 @@ margin-bottom: 20px;
             /* SAFARIS */
 
 .safaris{
-    margin-top: 10rem;
+    margin-top: 12rem;
 }
 
 .safaris__wrapper {
@@ -87,6 +87,7 @@ margin-bottom: 20px;
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 8%;
+    margin-top: 10rem;
     /* Added the below CSS Myself for tree */
     /* display: flex;
     justify-content: space-between;
@@ -308,10 +309,34 @@ footer {
     padding: 1.5rem 0;
     border-top: 2px solid var(--color-primary-variant);
     margin-top: 5rem ;
+}
 
-
+.footer-links {
+    text-decoration: underline;
 }
 
 article a:hover {
     text-decoration: underline;
+}
+
+article {
+    /* border: 1px solid black; */
+}
+/* MEDIA QUERIES (Medium Screen) */
+
+@media screen and (max-width: 1024px) {
+    /* MAIN HEADER */
+    .main__header {
+        height: fit-content;
+        padding: 12rem 0;
+    }
+
+    .main__header-container {
+        gap: 0;
+    }
+
+    .main__header-circle {
+        width: 16rem;
+        height: 16rem;
+    }
 }
