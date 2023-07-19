@@ -8,6 +8,7 @@ import Guides from './pages/guides/Guides'
 import Safari from './pages/safaris/Safaris'
 import NotFound from './pages/notFound/NotFound'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="/safaris" element={<Safari />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
   )
 }
