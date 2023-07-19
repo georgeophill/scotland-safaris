@@ -1,7 +1,7 @@
 nav{
     height: 10rem;
     width: 100vw;
-    background: hsl(var(--primary-hue), 100%, 30%, 0.5);
+    background-color: hsl(var(--primary-hue), 100%, 30%, 1);
     display: grid;
     place-items: center;
     position: fixed;
@@ -97,16 +97,6 @@ nav{
     .active-nav, .active-nav::after{
         display: none;
 
-    }
-
-    .nav__links li {
-        height: 4rem;
-        width: 100%;
-        box-shadow: -2rem 2rem 5rem rgba(0, 0, 0, 0.4);
-        animation: navAnimation 600ms ease forwards;
-        transform: rotateX(90deg);
-        opacity: 0;
-        transform-origin: top;
     }
 
     .nav__links li {

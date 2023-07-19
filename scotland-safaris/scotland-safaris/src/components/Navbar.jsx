@@ -1,4 +1,4 @@
-import {useState }from 'react'
+import {useState, useEffect }from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import {links} from '../data'
 import {FaBars} from 'react-icons/fa'
@@ -8,8 +8,26 @@ import Logo from '../images/logo1.png'
 
 const Navbar = () => {
   const [isNavShowing, setIsNavShowing] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
+
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if(window.scrollY > 250){
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false)
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    };
+  }, [])
+
   return (
-    <nav>
+    <nav className={isScrolled ? 'scrolled' : ''}>
         <div className="container nav__container">
             <Link to="/" className="logo" onClick={() => setIsNavShowing(false)} >
                 <img src={Logo} alt="Logo" id="logo1"/>

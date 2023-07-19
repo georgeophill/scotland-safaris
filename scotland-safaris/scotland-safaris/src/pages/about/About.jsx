@@ -1,5 +1,5 @@
 import Header from '../../components/Header'
-import HeaderImage from '../../images/strath-peffer.png'
+import HeaderImage from '../../images/sunset.png'
 import './About.css'
 
 const About = () => {
