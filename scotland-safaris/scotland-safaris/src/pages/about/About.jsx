@@ -1,9 +1,12 @@
-import React from 'react'
+import Header from '../../components/Header'
+import HeaderImage from '../../images/strath-peffer.png'
 import './About.css'
 
 const About = () => {
   return (
-    <div>About</div>
+    <>
+    <Header title="About Us" image={HeaderImage} ></Header>
+    </>
   )
 }
 

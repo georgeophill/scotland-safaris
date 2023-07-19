@@ -402,7 +402,7 @@ article {
     }
 
     .main__header-container {
-        grid-template-columns: 0.95fr;
+        grid-template-columns: 1fr;
     }
 
     .main__header-container {
@@ -412,4 +412,64 @@ article {
     .main__header {
         width: 100vw;
     }
+    
+    /* SAFARIS */
+
+    .safaris__wrapper{
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.safaris__safari {
+    width: 84%;
+    margin: 0 auto;
+}
+
+/* VALUES */
+
+    .values__wrapper {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .card.values__value {
+        width: 84%;
+        margin-inline: auto;
+    }
+
+
+/* FAQS */
+
+    .faqs__wrapper {
+       gap: 1rem;
+       margin-top: 3rem;
+    }
+
+    
+    /* TESTIMONIALS */
+    
+    .testimonials{
+    width: 95%
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 7rem;
+}
+
+.footer__container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+.footer__container article {
+    align-items: center;
+}
+
+.footer__container p {
+    text-align: center;
+}
+
 }

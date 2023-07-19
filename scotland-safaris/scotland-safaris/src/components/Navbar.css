@@ -180,7 +180,6 @@ nav{
 
     nav {
         height: 5rem;
-        
     }
 
     .logo{
@@ -197,4 +196,7 @@ nav{
         border-radius: 10px;
     }
 
+    .main__header {
+        padding: 0rem 0 0;
+    }
 }
