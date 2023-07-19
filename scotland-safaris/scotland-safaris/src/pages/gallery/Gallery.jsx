@@ -11,8 +11,6 @@ const Gallery = () => {
     images.push(require(`../../images/gallery/gallery${i}.JPG`))
   }
 
-  console.log(images)
-
   return (
     
     <>
