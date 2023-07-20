@@ -269,12 +269,12 @@ const Guide1 = require('./images/Guide1.png')
 // const Guide6 = require('./images/Guide6.jpg')
 
 
-export const Guides = [
+export const guides = [
     {
         id: 1,
         image: Guide1,
-        name: 'John Doe',
-        job: 'Aerobic Guide',
+        name: 'Orlando Hill',
+        job: 'Adventure Guide',
         socials: ['https://instagram.com/', 'https://twitter.com/', 'https://facebook.com/', 'https://linkedin.com/']
     },
     // {
