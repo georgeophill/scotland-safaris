@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Header from '../../components/Header';
 import HeaderImage from '../../images/stag-and-strath.JPG';
 import ImageModal from '../../components/ImageModal';
+import ImageCarousel from '../../components/ImageCarousel';
 import './Gallery.css';
 
 const Gallery = () => {
@@ -71,6 +72,7 @@ const Gallery = () => {
           handlePrev={handlePrev}
         />
       )}
+      {/* <ImageCarousel images={images} />  */} 
     </>
   );
 };
