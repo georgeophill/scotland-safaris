@@ -275,7 +275,7 @@ export const guides = [
         image: Guide1,
         name: 'Orlando Hill',
         job: 'Adventure Guide',
-        socials: ['https://instagram.com/', 'https://twitter.com/', 'https://facebook.com/', 'https://linkedin.com/']
+        socials: ['https://www.instagram.com/_orlando_hill/', 'https://twitter.com/', 'https://www.facebook.com/orlando.hill.18', 'https://www.linkedin.com/in/orlando-hill-5290431b3/']
     },
     // {
     //     id: 2,

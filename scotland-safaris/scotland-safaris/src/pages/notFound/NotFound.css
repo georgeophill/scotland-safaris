@@ -9,6 +9,6 @@
     display: inline-block;
 }
 
-h2 {
-    margin-top: 10rem;
+.notfound__container h2 {
+    margin-top: 10rem;   
 }

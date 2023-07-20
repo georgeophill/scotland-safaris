@@ -14,10 +14,10 @@ const Safaris = () => {
     each one is uniquely planned out and considers all of the best that Scotland has to offer.
     </Header>
     <section className='safaris'>
-      <div className='container safaris__container'>
+      <div className='container plans__container'>
         {
           plans.map(({ id, name, desc, price, features}) => {
-            return <Card key={id} className='safari'>
+            return <Card key={id} className='plan'>
               <h3>{name}</h3>
               <small>{desc}</small>
               <h1>{`£${price}`}</h1>
@@ -27,7 +27,7 @@ const Safaris = () => {
                   return <p key={index} className={!available ? 'disabled' : ''}>{feature}</p>
                 })
               }
-              <button className='btn lg'>Choose Plan</button>
+              <button className='btn lg'>Choose Safari</button>
             </Card>
           })
         }

@@ -17,10 +17,12 @@
 
 .guide h3 {
     margin-top: 2rem;
+    font-size: 2rem;
 }
 
 .guide p {
     margin-top: 1rem;
+    font-size: 1.25rem;
     color: var(--color-gray-100);
 }
 
@@ -30,5 +32,45 @@
     justify-content: center;
     align-items: center;
     margin: 2rem 0;
-
 }
+
+.trainer__socials a {
+    font-size: 1.5rem;
+    background: var(--color-gray-600);
+    padding: 0.8rem;
+    border-radius: 0.7rem;
+    transition: var(--transition);
+}
+
+.trainer:hover a {
+    background: var(--color-gray-500);
+}
+
+
+/* MEDIUM SCREENS */
+
+@media screen and (max-width: 1024px) {
+    .guides__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+}
+
+/* SMALL SCREENS */
+
+@media screen and (max-width: 600px) {
+    .guides__container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .guide h3 {
+        font-size: 1.5rem;
+    }
+
+    .card.guide {
+        width: 90%;
+        height: 92%;
+        margin: 0 auto;
+    }
+}   
