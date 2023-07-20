@@ -8,6 +8,7 @@ const Gallery = () => {
   const galleryLength = 11;
   const [images, setImages] = useState([]);
   const [selectedImage, setSelectedImage] = useState(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const fetchImages = async () => {
@@ -28,12 +29,21 @@ const Gallery = () => {
     fetchImages();
   }, []);
 
-  const handleImageClick = (image) => {
+  const handleImageClick = (image, index) => {
     setSelectedImage(image);
+    setCurrentIndex(index); // Update the currentIndex with the clicked image's index
   };
 
   const handleCloseModal = () => {
     setSelectedImage(null);
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
   };
 
   return (
@@ -42,20 +52,28 @@ const Gallery = () => {
         Lorem ipsum dolor sit, amet consectetur adipisicing elit.
         Beatae non repudiandae ducimus repellendus cupiditate unde. Temporibus eius fugit quis nihil.
       </Header>
-      <section className='gallery'>
-        <div className='container gallery__container'>
+      <section className="gallery">
+        <div className="container gallery__container">
           {images.map((image, index) => (
-            <article key={index} onClick={() => handleImageClick(image)}>
-              <img src={image} alt={`Gallery Image ${index + 1}`} />
+            <article key={index} onClick={() => handleImageClick(image, index)}>
+              <img src={image} alt={`Gallery ${index + 1}`} />
             </article>
           ))}
         </div>
       </section>
       {selectedImage && (
-        <ImageModal image={selectedImage} alt="Enlarged Image" closeModal={handleCloseModal} />
+        <ImageModal
+          images={images}
+          alt="Enlarged Image"
+          closeModal={handleCloseModal}
+          currentIndex={currentIndex}
+          handleNext={handleNext}
+          handlePrev={handlePrev}
+        />
       )}
     </>
   );
 };
 
 export default Gallery;
+
