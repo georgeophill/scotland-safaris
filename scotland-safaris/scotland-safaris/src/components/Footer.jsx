@@ -27,6 +27,8 @@ const Footer = () => {
             <a href="" target="_blank" rel='noreferrer'><AiOutlineTwitter /></a>
           </div>
         </article>
+      </div>
+      <div className='footer-info'>
         <article>
           <h4 className='Footer-links'>Permalinks</h4>
           <Link to="/about">About</Link>

@@ -27,7 +27,9 @@ const Safaris = () => {
                   return <p key={index} className={!available ? 'disabled' : ''}>{feature}</p>
                 })
               }
-              <button className='btn lg'>Choose Safari</button>
+              <a href="mailto:orlandohill1997@gmail.com">
+                <button className='btn lg'>Choose Safari</button>
+              </a>
             </Card>
           })
         }
