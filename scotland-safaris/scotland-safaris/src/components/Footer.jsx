@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="container footer__container">
-        <article>
+        <article className='footer_footer'>
           <Link to="/" className='logo' >
             <img id="footerlogo" src={Logo} alt="Footer logo" />
           </Link>
@@ -29,26 +29,50 @@ const Footer = () => {
         </article>
       </div>
       <div className='footer-info'>
-        <article>
+        <article className='footer_footer'>
           <h4 className='Footer-links'>Permalinks</h4>
-          <Link to="/about">About</Link>
-          <Link to="/safaris">Safaris</Link>
-          <Link to="/guides">Guides</Link>
-          <Link to="/gallery">Gallery</Link>
-          <Link to="/contact">Contact</Link>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/safaris">Safaris</Link>
+          </li>
+          <li>
+            <Link to="/guides">Guides</Link>
+          </li>
+          <li>
+            <Link to="/gallery">Gallery</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
         </article>
-        <article>
+        <article className='footer_footer'>
           <h4 className='Footer-links'>Insights</h4>
-          <Link to="/s">Blog</Link>
-          <Link to="/s">Case Studies</Link>
-          <Link to="/s">Events</Link>
-          <Link to="/s">Communities</Link>
-          <Link to="/s">FAQs</Link>
+          <li>
+            <Link to="/s">Blog</Link>
+          </li>
+          <li>
+            <Link to="/s">Case Studies</Link>
+          </li>
+          <li>
+            <Link to="/s">Events</Link>
+          </li>
+          <li>
+            <Link to="/s">Communities</Link>
+          </li>
+          <li>
+            <Link to="/s">FAQs</Link>
+          </li>
         </article>
-        <article>
+        <article className='footer_footer'>
           <h4 className='Footer-links'>Get In Touch</h4>
-          <Link to="/contact">Contact Us</Link>
-          <Link to="/s">Support</Link>
+          <li>
+            <Link to="/contact">Contact Us</Link>
+          </li>
+          <li>
+            <Link to="/s">Support</Link>
+          </li>
         </article>
       </div>
       <div className="footer__copyright">

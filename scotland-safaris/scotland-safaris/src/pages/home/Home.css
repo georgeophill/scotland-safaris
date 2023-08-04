@@ -328,6 +328,15 @@ footer .container {
     margin: 0 auto; /* Optional: Center the first container */
 }
 
+small {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content inside the articles */
+    margin-bottom: 3rem;
+    padding: 5rem;
+    font-size: 0.9rem;
+}
+
 
 
 /* MEDIA QUERIES (Medium Screen) */
@@ -469,12 +478,32 @@ footer {
     gap: 3rem;
 }
 
+.footer-info {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 .footer__container article {
+    display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .footer__container p {
     text-align: center;
+}
+
+small {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content inside the articles */
+    margin-bottom: 3rem;
+    padding: 5rem;
+    font-size: 0.6rem;
+}
+
+.footer_footer {
+    margin: 0 auto;
 }
 
 }
