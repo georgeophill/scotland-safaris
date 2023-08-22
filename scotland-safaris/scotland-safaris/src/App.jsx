@@ -12,6 +12,7 @@ import Footer from './components/Footer'
 
 const App = () => {
   return (
+    <React.StrictMode>
       <BrowserRouter>
         <Navbar />
         <Routes>
@@ -25,6 +26,7 @@ const App = () => {
         </Routes>
         <Footer/>
       </BrowserRouter>
+    </React.StrictMode>
   )
 }
 
