@@ -72,7 +72,7 @@ const Gallery = () => {
           handlePrev={handlePrev}
         />
       )}
-      {/* <ImageCarousel images={images} />  */} 
+      {/* <ImageCarousel images={images} />   */}
     </>
   );
 };
