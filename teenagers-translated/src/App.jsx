@@ -8,24 +8,26 @@ import ParentWork from './pages/parentWork/ParentWork';
 import Resources from './pages/resources/Resources';
 import SchoolWork from './pages/schoolWork/SchoolWork';
 import NotFound from './pages/notFound/NotFound';
+import Navbar from './components/Navbar';
 
 
 const App = () => {
     return (
-        <React.StrictMode>
+       <React.StrictMode>
         <BrowserRouter>
-        <Routes>
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/" element={<Home />} />
-            <Route path="/ourBook" element={<OurBook />} />
-            <Route path="/parentWork" element={<ParentWork />} />
-            <Route path="/resources" element={<Resources />} />
-            <Route path="/schoolWork" element={<SchoolWork />} />
-            <Route path="*" element={<NotFound />} />
-        </Routes>
+            <Navbar />
+            <Routes>
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/" element={<Home />} />
+                <Route path="/ourBook" element={<OurBook />} />
+                <Route path="/parentWork" element={<ParentWork />} />
+                <Route path="/resources" element={<Resources />} />
+                <Route path="/schoolWork" element={<SchoolWork />} />
+                <Route path="*" element={<NotFound />} />
+            </Routes>
         </BrowserRouter>
-    </React.StrictMode>
+        </React.StrictMode>
     );
 }
 
